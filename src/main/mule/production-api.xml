@@ -133,7 +133,7 @@ output application/json
   productId: "0123456789",
   productName: "DacDat",
   productProvider: "Udemy",
-  productDescription: "This api to deploy demo CICD project"
+  productDescription: "This api to deploy demo CICD project using Jenkins"
 } as Object {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
             </ee:message>
         </ee:transform>

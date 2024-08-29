@@ -1,0 +1,16 @@
+#%RAML 1.0
+title: production-api
+baseUri: https:localhost8082/products
+/products:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                productId: "0123456789",
+                productName: "DacDat",
+                productProvider: "Udemy",
+                productDescription: "This api to deploy demo CICD project"
+              }

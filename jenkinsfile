@@ -5,23 +5,11 @@ pipeline {
         maven 'Maven' // Ensure this matches the name of your Maven installation in Jenkins
     }
     
-	stages  {
-		stage('Build') {
-			steps {
-				bat 'mvn -B -U -e -V clean -DskipTests package'
-			}
-		}
-		
+	stages  {		
 		stage('Test') {
 			steps {
 				bat 'mvn test'
 			}
-		}
-		
-		stage('Deployment') {
-			steps {
-				bat 'mvn -U -V -e -B -DskipTests deploy -DmuleDeploy'
-			}
-		}
+		}		
 	}
 }

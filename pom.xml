@@ -4,7 +4,7 @@
 
 	<groupId>8e4e295e-b945-4ea0-8f55-a3c28b7e40b4</groupId>
 	<artifactId>product-api</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>mule-application</packaging>
 
 	<name>product-api</name>

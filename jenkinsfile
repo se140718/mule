@@ -6,12 +6,12 @@ pipeline {
     }
     
 	stages  {
-	
-		environment {
-			EXCHANGE_VERSION = '1.0.5'
-		}
-		
 		stage('Build Exchange') {
+	
+			environment {
+				EXCHANGE_VERSION = '1.0.5'
+			}
+		
 			steps {
 				bat 'mvn -B -U -e -V clean deploy -s settings.xml -Danypoint.exchange="%EXCHANGE_VERSION%"'
 			}

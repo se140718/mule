@@ -6,9 +6,9 @@ pipeline {
     }
     
 	stages  {
-		stage('Build') {
+		stage('Build Exchange') {
 			steps {
-				bat 'mvn -B -U -e -V clean -DskipTests package'
+				bat 'mvn -B -U -e -V clean deploy -s settings.xml'
 			}
 		}
 		
@@ -20,7 +20,7 @@ pipeline {
 		
 		stage('Deployment') {
 			steps {
-				bat 'mvn -U -V -e -B -DskipTests deploy -DmuleDeploy -s settings.xml'
+				bat 'mvn -U -V -e -B -DskipTests clean deploy -DmuleDeploy'
 			}
 		}
 	}

@@ -133,7 +133,7 @@ output application/json
   productId: "0123456789",
   productName: "DacDat",
   productProvider: "Udemy",
-  productDescription: "Update exchange version"
+  productDescription: "Update exchange version with snapshot"
 } as Object {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
             </ee:message>
         </ee:transform>

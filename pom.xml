@@ -30,7 +30,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>4.2.0</version>
+				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
 					<classifier>mule-application-example</classifier>
@@ -39,7 +39,7 @@
 						<provider>MC</provider>
 						<environment>dev</environment>
 						<target>Cloudhub-US-East-2</target>
-						<muleVersion>4.7.0</muleVersion>
+						<muleVersion>${app.runtime}</muleVersion>
 						<username>lhhd14122000</username>
 						<password>1593572486Phone</password>
 						<applicationName>product-api</applicationName>

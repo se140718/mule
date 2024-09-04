@@ -9,7 +9,7 @@ pipeline {
 		stage('Build Exchange') {
 	
 			environment {
-				EXCHANGE_VERSION = '1.0.6'
+				EXCHANGE_VERSION = '1.0.7'
 			}
 		
 			steps {

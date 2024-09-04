@@ -13,7 +13,7 @@ pipeline {
 			}
 		
 			steps {
-				bat 'mvn -B -U -e -V clean deploy -s settings.xml -Danypoint.exchange="%EXCHANGE_VERSION%"'
+				bat 'mvn -B -U -e -V clean deploy -s settings.xml -Danypoint.exchange.version="%EXCHANGE_VERSION%"'
 			}
 		}
 		

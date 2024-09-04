@@ -12,12 +12,6 @@ pipeline {
 			}
 		}
 		
-		stage('Test') {
-			steps {
-				echo "******* Test ********"
-			}
-		}
-		
 		stage('Deployment') {
 			steps {
 				bat 'mvn -U -V -e -B -DskipTests clean deploy -DmuleDeploy'
